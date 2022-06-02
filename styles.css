@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 35rem;
+  margin: 0 auto;
+  background: #404b78;
+}
+
+.weather-container {
+  background: #fff;
+  width: 40rem;
+  border-radius: 7px;
+}
+
+.weather-container.active .weather-section {
+  display: flex;
+}
+
+.weather-container.active .input-part {
+  display: none;
+}
+
+.weather-container .icon-left {
+  display: none;
+}
+
+.weather-container.active .icon-left {
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.weather-container header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #404b78;
+  font-weight: 600;
+  padding: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.input-part {
+  margin: 2rem;
+}
+
+.input-part input:is(:focus, :valid) {
+  border: 2px solid #404b78;
+}
+
+.input-part .info-txt {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  display: none;
+}
+
+.info-txt.error {
+  display: block;
+  color: #721c24;
+  background-color: #f6babf;
+}
+
+.info-txt.pending {
+  display: block;
+  color: #1b8107;
+  background-color: #caf6cd;
+}
+
+.input-part :where(input, button) {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.input-part input {
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator::before {
+  content: "or";
+  font-size: 1.8rem;
+  padding: 0 2rem;
+  background-color: #fff;
+  color: #999;
+}
+
+.input-part button {
+  background-color: #404b78;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+  letter-spacing: 1px;
+}
+
+.input-part button:hover {
+  opacity: 0.9;
+}
+
+.weather-section {
+  margin: 3rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weather-section {
+  display: none;
+}
+
+.weather-section img {
+  max-width: 10rem;
+}
+
+.weather-section :where(span, p, .weather) {
+  font-size: 1.8rem;
+}
+
+.temp {
+  display: flex;
+}
+
+.temp span {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.icon-location {
+  width: 1.8rem;
+}
+
+.weather {
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.location {
+  margin-bottom: 2rem;
+}
+
+.bottom-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 1.5rem;
+}
+
+.details .temp :where(.number, span, p) {
+  font-size: 1.6rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  padding: 8px;
+  text-align: center;
+  color: #999;
+}
+
+.info a {
+  text-decoration: none;
+}

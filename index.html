@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App: Find current weather all around the world</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <header>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon-left"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11 17l-5-5m0 0l5-5m-5 5h12"
+          />
+        </svg>
+        WEATHER APP
+      </header>
+
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <input
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+          required
+        />
+        <div class="separator"></div>
+        <button class="location-btn">Get Device Location</button>
+      </section>
+
+      <section class="weather-section">
+        <img src="#" alt="weather icon" />
+        <div class="temp">
+          <span class="number">_</span>
+          <span class="degree">°C</span>
+        </div>
+
+        <div class="weather">_ _</div>
+        <div class="location">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon-location"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+          <span>__ , __</span>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <div class="details">
+              <div class="temp">
+                <span class="number-2">_</span>
+                <span class="degree">°C</span>
+              </div>
+              <p>Feels like</p>
+            </div>
+          </div>
+
+          <div class="column humidity">
+            <div class="details">
+              <span class="number">_</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>
+        <p class="info">
+          Developed by
+          <a href="https://www.github.com/kcvijay">Vijay K.C.</a> from the
+          tutorials of
+          <a href="https://www.youtube.com/c/CodingNepal">Coding Nepal.</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+    <script src="/new.js"></script>
+  </body>
+</html>
